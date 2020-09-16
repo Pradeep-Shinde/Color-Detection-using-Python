@@ -2,7 +2,7 @@
 
 This repo contains Kmeans clustering algorithm, Color Detection method and image croping method.
 
-## Kmeans
+## Kmeans Clustering Algorithm
 
 Input is croped image, return is R,G,B values
 
