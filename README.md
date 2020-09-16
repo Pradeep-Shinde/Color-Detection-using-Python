@@ -13,7 +13,7 @@ Disadvantage: Time-consuming
 Reference:  [K-Means Clustering in OpenCV](https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_ml/py_kmeans/py_kmeans_opencv/py_kmeans_opencv.html)
 
 ## demo
-![color Recognition]()
+![color Recognition](https://github.com/Pradeep-Shinde/Color-Detection-using-Python/blob/master/Color%20Detection.gif)
 
 ## reference
 1. [Kmeans Clustering Algorithm](https://github.com/walton-wang929/Color_Recognition/blob/master/Color_Recognition_Kmeans.py)
