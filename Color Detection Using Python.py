@@ -10,10 +10,10 @@ cropping = False
 
 # Reading csv file with pandas and giving names to each column
 index = ["color", "color_name", "hex", "R", "G", "B"]
-csv = pd.read_csv('C:\\Users\\Ay507tx\\Desktop\\n\\python-project-color-detection\\colors.csv', names=index, header=None)
+csv = pd.read_csv('colors.csv', names=index, header=None)
 
 # load the image, clone it, and setup the mouse callback function
-image=cv2.imread('C:\\Users\\Ay507tx\\Desktop\\n\\python-project-color-detection\\colorpic.jpg')
+image=cv2.imread('colorpic.jpg')
 roi=image
 
 #Function for cropping Image
@@ -84,10 +84,8 @@ def Color_Recognition_Kmeans(image_cropped):
 	# convert list to array in order, then to list
 	center = np.asarray(center)[order].tolist()
 
-	print(center[0])
 	rgb = center[0]
 	return rgb
-	# print(rgb)
 
 clone = image.copy()
 cv2.namedWindow("image")
@@ -108,9 +106,9 @@ while True:
 	if len(refPt) == 2:
 		roi = clone[refPt[0][1]:refPt[1][1], refPt[0][0]:refPt[1][0]]
 	rgb=Color_Recognition_Kmeans(roi)
-	b = rgb[0]
-	g = rgb[1]
 	r = rgb[2]
+	g = rgb[1]
+	b = rgb[0]
 
 	# cv2.rectangle(image, startpoint, endpoint, color, thickness)-1 fills entire rectangle
 	cv2.rectangle(image, (20, 20), (750, 60), (b, g, r), -1)
