@@ -62,18 +62,6 @@ def Color_Recognition_Kmeans(image_cropped):
 	# a list
 	center = [tuple([int(c) for c in color]) for color in center]
 
-	# return unique class label of an array and its coming counts
-	l, c = np.unique(label, return_counts=True)
-
-	# sorting list (l, c),reverse it from high to low
-	order = sorted(zip(c, l), reverse=True)
-
-	# just show class label in order
-	order = [l for c, l in order]
-
-	# convert list to array in order, then to list
-	center = np.asarray(center)[order].tolist()
-
 	rgb = center[0]
 	return rgb
 
