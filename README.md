@@ -18,6 +18,6 @@ Reference:  [K-Means Clustering in OpenCV](https://docs.opencv.org/3.0-beta/doc/
 ## reference
 1. [Kmeans Clustering Algorithm](https://github.com/walton-wang929/Color_Recognition/blob/master/Color_Recognition_Kmeans.py)
 
-2. [image croping](https://www.pyimagesearch.com/2015/03/09/capturing-mouse-click-events-with-python-and-opencv/)
+2. [image cropping](https://www.pyimagesearch.com/2015/03/09/capturing-mouse-click-events-with-python-and-opencv/)
 
 3. [Color Detection](https://data-flair.training/blogs/project-in-python-colour-detection/)
